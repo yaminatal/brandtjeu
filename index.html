@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chasse au Trésor Brandt • FIA 2025</title>
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Scanner QR -->
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container py-5">
+    <!-- Titre principal -->
+    <header class="text-center mb-5">
+     <!--<h1 class="display-5 fw-bold text-brandt">Brandt</h1>-->
+      <p class="text-muted fs-5"></p>
+    </header>
+
+    <!-- Page Bienvenue -->
+    <section id="bienvenue" class="section-card">
+      <div class="text-center">
+        <!--<h1 class="h4 fw-semibold text-brandt mb-4">Bienvenue</h1>-->
+        <p class="lead text-muted mb-5">Explorez notre stand, découvrez nos produits innovants<br>et tentez de remporter de superbes cadeaux !</p>
+        <img src="Logo application (002).png" alt="Brandt" class="img-fluid" style="max-height: 180px;">
+        <div class="mb-4">
+          <p class="fw-medium">Scannez le QR code remis à l'entrée pour commencer :</p>
+          <button id="scan-entree" class="btn btn-brandt btn-lg px-5 py-3">
+            Scanner le QR d'entrée
+          </button>
+        </div>
+        
+        <div id="qr-entree-reader" class="qr-reader mt-4 d-none"></div>
+      </div>
+    </section>
+
+    <!-- Formulaire inscription – SANS EMAIL -->
+    <section id="accueil" class="d-none section-card">
+      <h2 class="h4 fw-semibold text-brandt text-center mb-4">Inscrivez-vous</h2>
+      <form id="form-inscription" class="row g-3">
+        <div class="col-md-6"><input type="text" class="form-control" id="nom" placeholder="Nom" required></div>
+        <div class="col-md-6"><input type="text" class="form-control" id="prenom" placeholder="Prénom" required></div>
+        <div class="col-12"><input type="tel" class="form-control" id="tel" placeholder="Téléphone" required></div>
+        <div class="col-12 text-center mt-4">
+          <button type="submit" class="btn btn-brandt btn-lg px-5">Commencer le jeu</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Page des étapes – 7 INDICES UNIQUEMENT -->
+    <section id="etapes" class="d-none section-card">
+      <p class="text-muted text-center mb-4">Suivez les indices et explorez le stand !</p>
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action step-item" id="step-0">Cherche là où les œufs se reposent… Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-1">Cherche là où les vêtements attendent calmement… Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-2">Compte ce que tu peux ranger… l’indice t’attend là où les assiettes s’alignent Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-3">Cherche là où on réchauffe les plats… Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-4">Le monde défile en images… Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-5">Cherche là où l’air froid s’échappe pour combattre la chaleur d’été Cadenas</a>
+        <a href="#" class="list-group-item list-group-item-action step-item disabled" id="step-6">Cherche là où Vedette brille en bleu Cadenas</a>
+      </div>
+
+      <div class="text-center mt-5">
+        <button id="reset-game" class="btn btn-outline-secondary btn-sm">Recommencer le jeu</button>
+      </div>
+    </section>
+
+    <!-- Page Scanner (indice + QR seulement) -->
+    <section id="scanner-section" class="d-none section-card text-center">
+      <p id="instruction" class="lead mb-4 text-muted fw-bold"></p>
+      <div id="qr-reader" class="qr-reader"></div>
+    </section>
+
+    <!-- Page Question (DÉPLACÉE ICI – plus jamais cachée avec scanner-section) -->
+    <section id="question-section" class="d-none section-card text-center">
+      <div class="p-5">
+        <div id="feedback" class="mt-3 fw-bold mb-4"></div>
+        <h5 id="question-text" class="fw-semibold mb-4"></h5>
+        <form id="form-question" class="text-start mx-auto" style="max-width: 600px;"></form>
+      </div>
+    </section>
+
+    <!-- Succès -->
+    <section id="succes" class="d-none section-card text-center py-5">
+      <h1 class="display-5 fw-bold text-brandt mb-4">Bravo !</h1>
+      <p class="lead text-muted mb-5">Vous avez terminé le jeu</p>
+      <p class="mb-5">Présentez cette confirmation à l'équipe pour participer à la tombola.</p>
+      <button id="download-pdf" class="btn btn-brandt btn-lg px-5">Télécharger la confirmation</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

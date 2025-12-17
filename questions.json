@@ -1,0 +1,136 @@
+{
+  "refrigerateur": [
+    {
+      "question":"  ؟ Brandt ما هي الفئة الطاقية لثلاجات \nQuelle est la classe énergétique des réfrigérateurs Brandt ?",
+      "options": ["A+", "A", "B"],
+      "correct": "A+"
+    },
+    {
+      "question": "لِمَ تُستَخدَم تقنية \"No Frost\"؟\nÀ quoi sert la technologie \"No Frost\" ?",
+      "options": ["لمنع تشكّل الجليد\nÀ éviter la formation de givre", "لزيادة استهلاك الطاقة\nÀ augmenter la consommation d’énergie", "لتقليل الضجيج\nÀ faire moins de bruit"],
+      "correct": "لمنع تشكّل الجليد\nÀ éviter la formation de givre"
+    },
+    {
+      "question": "ما هي ميزة الثلاجة المزودة بضاغط Inverter؟\nQuel est l’avantage d’un frigo avec compresseur inverter ?",
+      "options": ["أكثر هدوءًا وتوفيرًا للطاقة\nMoins bruyant et économie d’énergie", "تبريد أسرع\nRefroidit plus vite", "إنتاج المزيد من الجليد\nProduit plus de glace"],
+      "correct": "أكثر هدوءًا وتوفيرًا للطاقة\nMoins bruyant et économie d’énergie"
+    },
+    {
+      "question": "ما هي مدة ضمان ضاغط Eco Inverter في ثلاجات Brandt؟\nQuelle est la durée de la garantie du compresseur Eco Inverter des réfrigérateurs Brandt ?",
+      "options": ["سنة واحدة\n1 an", "خمس سنوات\n5 ans", "عشر سنوات\n10 ans"],
+      "correct": "عشر سنوات\n10 ans"
+    },
+    {
+      "question": "ما هو الوضع الذي يسمح بتوفير الطاقة عند الذهاب في عطلة؟\nQuel est le mode qui permet d’économiser de l’énergie pendant les vacances ?",
+      "options": ["Super Freeze", "Holiday Mode\nوضع العطلة", "Fresh Zone"],
+      "correct": "Holiday Mode\nوضع العطلة"
+    },
+    {
+      "question": "ما فائدة منطقة \"Fresh Zone\" في ثلاجات Brandt؟\nÀ quoi sert la zone \"Fresh Zone\" dans les réfrigérateurs Brandt ?",
+      "options": ["تخزين المشروبات\nRanger les boissons", "الحفاظ على اللحوم والأسماك لمدة أطول\nÀ conserver plus longtemps viande et poisson", "إنارة الثلاجة\nÉclairer l’intérieur du réfrigérateur"],
+      "correct": "الحفاظ على اللحوم والأسماك لمدة أطول\nÀ conserver plus longtemps viande et poisson"
+    }
+  ],
+  "lavage_linge": [
+    {
+      "question": "متى نستخدم التشغيل المؤجل غالباً؟\nÀ quel moment le départ différé est-il souvent utilisé ?",
+      "options": ["عندما نريد أن ينتهي الغسيل قبل وقت وصولنا للمنزل\nQuand on veut que le linge termine juste avant de rentrer chez soi", "عندما نريد متابعة الغسالة دقيقة بدقيقة\nQuand on veut surveiller la machine minute par minute", "عندما نريد تخفيض سرعة العصر\nQuand on veut réduire la vitesse d’essorage"],
+      "correct": "عندما نريد أن ينتهي الغسيل قبل وقت وصولنا للمنزل\nQuand on veut que le linge termine juste avant de rentrer chez soi"
+    },
+    {
+      "question": "ماذا يوفّر محرك الانفرتر؟\nLe moteur Inverter permet une machine :",
+      "options": ["آلة أكثر هدوءًا وأطول عمراً\nPlus silencieuse et durable", "آلة تتطلب المزيد من الطاقة\nPlus consommatrice en énergie", "آلة أبطأ\nPlus lente"],
+      "correct": "آلة أكثر هدوءًا وأطول عمراً\nPlus silencieuse et durable"
+    },
+    {
+      "question": "أي نوع من الملابس يمكن أن يستفيد من ميزة البخار؟\nQuel linge peut profiter de l’option vapeur ?",
+      "options": ["الملابس النظيفة التي تحتاج إلى انتعاش\nLe linge propre qui a besoin d’être rafraîchi", "الأحذية\nLes chaussures", "الملابس المتّسخة جداً\nLe linge très sale plein de boue"],
+      "correct": "الملابس النظيفة التي تحتاج إلى انتعاش\nLe linge propre qui a besoin d’être rafraîchi"
+    }
+  ],
+  "lavage_vaisselle": [
+    {
+      "question": "ما دور الملح في غسالة الأطباق؟\nÀ quoi sert le sel dans le lave-vaisselle ?",
+      "options": ["تحسين الغسيل عبر تليين الماء\nÀ améliorer le lavage en adoucissant l’eau", "تمليح الطعام\nÀ saler les aliments", "صنع رغوة أكثر\nÀ faire de la mousse"],
+      "correct": "تحسين الغسيل عبر تليين الماء\nÀ améliorer le lavage en adoucissant l’eau"
+    },
+    {
+      "question": "ما هي فئة الطاقة لغسالة الأطباق Brandt؟\nQuelle est la note énergétique attribuée au lave-vaisselle Brandt ?",
+      "options": ["Classe A++", "Classe A+", "Classe B"],
+      "correct": "Classe A++"
+    },
+    {
+      "question": "ماذا يعني أن غسالة الأطباق سعتها 12؟\nQuand on dit qu’un lave-vaisselle a une capacité de 12 couverts, cela veut dire :",
+      "options": ["يمكنها غسل 12 خدمة طعام كاملة (طبق – كوب – أدوات – زبدية – فنجان)\nQu’il peut laver exactement 12 services complets (assiette, verre, couverts, bol, tasse)", "يمكنها غسل 12 طبقا فقط\nQu’il peut laver 12 assiettes seulement", "دورة لتعقيم الأدوات فقط\nLes cycles de désinfection uniquement"],
+      "correct": "يمكنها غسل 12 خدمة طعام كاملة (طبق – كوب – أدوات – زبدية – فنجان)\nQu’il peut laver exactement 12 services complets (assiette, verre, couverts, bol, tasse)"
+    }
+  ],
+  "cuisson": [
+    {
+      "question": "ما هي القدرة الحرارية القصوى للوحة الطهي Brandt؟\nQuelle est la puissance maximale que peut atteindre une table de cuisson Brandt ?",
+      "options": ["11 500 واط\n11 500 W", "9 000 واط\n9 000 W", "3 000 واط\n3 000 W"],
+      "correct": "11 500 واط\n11 500 W"
+    },
+    {
+      "question": "ما هي وظيفة الكتاليز في الفرن؟\nQuelle est la fonction de la catalyse dans un four ?",
+      "options": ["تبريد الفرن\nRefroidir le four", "الحفاظ على نظافة الفرن\nGarder le four propre", "جعل الفرن أكثر متانة\nRendre le four plus solide"],
+      "correct": "الحفاظ على نظافة الفرن\nGarder le four propre"
+    },
+    {
+      "question": "ما هي وظيفة الترموستات في الطباخة؟\nÀ quoi sert le thermostat dans une cuisinière ?",
+      "options": ["زيادة سرعة الطهي\nÀ augmenter la vitesse de la cuisson", "الإعلام بدرجة حرارة الفرن\nÀ afficher la température du four", "ضبط درجة حرارة الفرن\nÀ régler la température du four"],
+      "correct": "ضبط درجة حرارة الفرن\nÀ régler la température du four"
+    }
+  ],
+  "ctv": [
+    {
+      "question": "ما هو معدل تحديث شاشة 65’’ Mini-LED BA65K800G؟\nQuel est le taux de rafraîchissement de la 65’’ Mini-LED BA65K800G ?",
+      "options": ["60Hz", "120Hz", "144Hz"],
+      "correct": "144Hz"
+    },
+    {
+      "question": "ما هي تقنية الصوت في شاشة 55’’ QLED BA55K600G؟\nQuelle est la technologie du son disponible dans la 55’’ QLED BA55K600G ?",
+      "options": ["DTS", "DOLBY ATMOS", "DBX"],
+      "correct": "DOLBY ATMOS"
+    },
+    {
+      "question": "ما هي نسخة أندرويد في شاشة 43’’ Google TV BA43500G؟\nQuelle est la version d’Android du 43’’ Google TV BA43500G ?",
+      "options": ["Android 11", "Android 13", "Android 14"],
+      "correct": "Android 14"
+    },
+    {
+      "question": "إلى ماذا تُستخدم وظيفة Hotspot Wi-Fi في أجهزة Google TV Brandt؟\nÀ quoi sert la fonction Hotspot Wi-Fi intégrée dans les modèles Google TV de Brandt ?",
+      "options": ["مشاركة اتصال الإنترنت مع أجهزة أخرى\nPartager la connexion Internet du téléviseur avec d’autres appareils", "إيقاف الوصول إلى الشبكة\nBloquer l’accès au réseau", "زيادة سرعة HDMI\nAugmenter la vitesse HDMI"],
+      "correct": "مشاركة اتصال الإنترنت مع أجهزة أخرى\nPartager la connexion Internet du téléviseur avec d’autres appareils"
+    }
+  ],
+  "climatiseur": [
+    {
+      "question": "ما هو فائدة الضاغط Inverter في جهاز المكيف؟\nQuel est l’avantage d’un compresseur Inverter dans un climatiseur ?",
+      "options": ["توفير الطاقة\nÉconomie d’énergie", "ضجيج أكثر\nPlus de bruit", "أقل برودة\nMoins froid"],
+      "correct": "توفير الطاقة\nÉconomie d’énergie"
+    },
+    {
+      "question": "ما هي الميزة الرئيسية لمكيف الهواء من النوع الاستوائي؟\nQuel est le principal avantage d’un climatiseur de type Tropical ?",
+      "options": ["لعمل في درجات حرارة عالية\nFonctionnement à haute température", "قليل المتانة\nPeu durable", "راحة سيئة\nMauvais confort"],
+      "correct": "لعمل في درجات حرارة عالية\nFonctionnement à haute température"
+    }
+  ],
+  "vedette": [
+    {
+      "question": "أين تقع الشاشة التي تسمح بضبط درجة حرارة ثلاجات Vedette؟\nOù se trouve l’afficheur qui permet de régler la température des réfrigérateurs Vedette ?",
+      "options": ["في الخارج، على باب المجمد\nÀ l’extérieur, sur la porte du congélateur", "في الداخل، في الزاوية اليمنى للثلاجة\nÀ l’intérieur, dans l’angle droit du réfrigérateur", "تحت درج الخضروات\nSous le bac à légume"],
+      "correct": "في الخارج، على باب المجمد\nÀ l’extérieur, sur la porte du congélateur"
+    },
+    {
+      "question": "كيف يمكن ضمان السلامة عند استخدام سخان الغاز؟\nComment assurer la sécurité lors de l’utilisation d’un chauffage à gaz ?",
+      "options": ["كاشف أول أكسيد الكربون\nDétecteur de monoxyde de carbone", "ترك المدفأة تعمل إذا كانت اللهب حمراء\nLaisser allumé si la flamme est rouge", "استخدام المدفأة في غرفة مغلقة بدون تهوية\nUtiliser le chauffage dans une pièce fermée sans ventilation"],
+      "correct": "كاشف أول أكسيد الكربون\nDétecteur de monoxyde de carbone"
+    },
+    {
+      "question": "كيف نشعل مواقد طباخة Vedette؟\nComment allume-t-on les feux des cuisinières Vedette ?",
+      "options": ["بإستخدام قداحة يدوية\nAvec un briquet manuel", "بإستخدام زر كهربائي\nAvec un bouton électrique", "بالضغط على المقبض بيد واحدة فقط\nEn appuyant sur la manette avec une seule main"],
+      "correct": "بإستخدام زر كهربائي\nAvec un bouton électrique"
+    }
+  ]
+}

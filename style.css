@@ -1,0 +1,122 @@
+:root {
+  --brandt-red: #e2001a;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+}
+
+/* Les grands carrés blancs : fixes, pas de mouvement */
+.section-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+/* Texte Brandt */
+.text-brandt {
+  color: var(--brandt-red) !important;
+}
+
+/* Boutons Brandt */
+.btn-brandt {
+  background-color: var(--brandt-red);
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-brandt:hover {
+  background-color: #c80015;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(226, 0, 26, 0.3);
+}
+
+/* Liste des étapes */
+.step-item {
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #f8f9fa;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-item:not(.disabled):hover {
+  background: #fde8e8; /* Légère teinte rouge clair au hover */
+}
+
+/* Étape actuelle (cadenas) */
+.step-current {
+  background-color: #fde8e8 !important;
+  border-left: 6px solid var(--brandt-red) !important;
+  color: var(--brandt-red) !important;
+  font-weight: 600;
+}
+
+/* Étapes futures → grisée */
+.step-item.disabled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Icône cadenas / validé */
+.step-item .icon {
+  font-size: 1.4rem;
+  margin-left: 15px;
+}
+
+/* Scanner */
+.qr-reader {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Page question – feedback couleur */
+#question-section {
+  background: white;
+  transition: all 0.4s ease;
+}
+
+#question-section.border-success {
+  border: 5px solid #28a745 !important;
+  background-color: #f8fff8;
+}
+
+#question-section.border-danger {
+  border: 5px solid #dc3545 !important;
+  background-color: #fff8f8;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .section-card {
+    padding: 1.8rem;
+    border-radius: 15px;
+  }
+  
+  .step-item {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
